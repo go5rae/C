@@ -9,8 +9,8 @@
 void disp_car(int car_number, int distance)
 {
     int i;
-    printf("CAR #%d:", car_number);
-    for ( i = 0; i < distance/10; i++ ) {
+    printf("CAR #%d:", car_number);  // 자동차 번호 출력
+    for ( i = 0; i < distance/10; i++ ) {  // 거리를 10으로 나눈 값만큼 '*'을 출력
         printf("*");
     }
     printf("\n");
