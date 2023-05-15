@@ -8,14 +8,14 @@
 // 각도(degree)를 라디안으로 변환하는 함수 rad()
 double rad(double degree)
 {
-    return PI * degree / 180.0;
+    return PI * degree / 180.0;  // 주어진 각도를 PI값으로 곱한 뒤 180으로 나누어 라디안으로 변환한 값을 계산하여 반환
 }
 
 // 주어진 높이만큼 '*' 막대를 그리는 함수 drawbar()
 void drawbar(int height)
 {
-    for (int i = 0; i < height; i++)
-            printf("*");
+    for (int i = 0; i < height; i++)  // height만큼 반복
+            printf("*");  // '*'를 높이만큼 반복하고 출력
     printf("\n");
 }
 
@@ -29,7 +29,7 @@ int main()
             y = (int)(60 * sin(rad((double)degree)) + 0.5);
             
             // '*' 막대 그리기 함수 호출
-            drawbar(y);
+            drawbar(y);  // y값에 해당하는 높이의 막대를 출력
     }
     return 0;
 }
